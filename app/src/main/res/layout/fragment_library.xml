@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".LibraryFragment">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/select_user" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerUsers"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/black"
+        android:hint="@string/select_book"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/spinnerBooks"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBorrow"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:fontFamily="@font/manrope_bold"
+            android:layout_marginStart="30dp"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/borrow"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReturn"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:fontFamily="@font/manrope_bold"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/return_str"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

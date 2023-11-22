@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:textColor="@color/black"
+        android:id="@+id/etBookName"
+        android:fontFamily="@font/manrope_bold"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/grey"
+        android:textSize="20sp"
+        android:textColorHint="@color/grey"
+        android:layout_height="wrap_content"
+        android:hint="@string/book_name"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etBookQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantity"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textColorHint="@color/grey"
+        android:fontFamily="@font/manrope_bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/grey"
+        android:inputType="number"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddBook"
+        android:fontFamily="@font/manrope_bold"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Book"/>
+</LinearLayout>
