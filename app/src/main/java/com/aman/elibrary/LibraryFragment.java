@@ -60,7 +60,7 @@ public class LibraryFragment extends Fragment {
                     if (selectedBook.getQuantity() > 0) {
                         library.borrowBook(selectedUser, selectedBook);
                         library.saveBooks(requireContext());
-                        updateSpinners();
+                        // updateSpinners();
                         Snackbar.make(view, "Book borrowed successfully", Snackbar.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(requireContext(), "Selected book is out of stock", Toast.LENGTH_SHORT).show();
@@ -73,8 +73,6 @@ public class LibraryFragment extends Fragment {
 
         btnReturn = view.findViewById(R.id.btnReturn);  // Initialize btnReturn
 
-        // ... (existing code)
-
         btnReturn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,7 +84,7 @@ public class LibraryFragment extends Fragment {
                     if (selectedUser.getBorrowedBooks() > 0) {
                         library.returnBook(selectedUser, selectedBook);
                         library.saveBooks(requireContext());
-                        updateSpinners();
+                        // updateSpinners();
                         Snackbar.make(view, "Book returned successfully", Snackbar.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(requireContext(), "Selected user has no borrowed books", Toast.LENGTH_SHORT).show();
